@@ -1,22 +1,20 @@
-class student {
-    private String name;
-    private int rollNumber;
-    private String course;
+class Student {
+    String name;
+    int age;
+    String DOB;
 
-    public student(String name, int rollNumber, String course) {
-        this.name = name;
-        this.rollNumber = rollNumber;
-        this.course = course;
+    Student(String name, int age, String DOB){
+        this.name=name;
+        this.age=age;
+        this.DOB=DOB;
     }
-    public void display() {
-        System.out.println("Student Name: " + name);
-        System.out.println("Roll Number: " + rollNumber);
-        System.out.println("Course: " + course);
+    void display(){
+        System.out.println("Student Name:"+name+" Student age:"+age+" Student DOB:"+DOB);
     }
 }
-public class Date{
+public class Date {
     public static void main(String[] args) {
-        student stud = new student("Alice", 101, "Computer Science");
-        stud.display();
+        Student s1= new Student("yogi",20,"12-12-2004");
+        s1.display();
     }
 }
